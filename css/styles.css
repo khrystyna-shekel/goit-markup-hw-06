@@ -50,7 +50,8 @@ img {
  .container {
     min-width: 320px;
     max-width: 428px;
-    /* width: auto; */
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 16px;
  } 
 
@@ -110,8 +111,6 @@ button {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
-
 }
 
 .item-descr {
@@ -275,7 +274,6 @@ input {
 
 .hero-section {
     padding: 112px 0;
-    margin-bottom: 96px;
     background-color: var(--dark);
     background-repeat: no-repeat;
     background-position: center;
@@ -295,7 +293,7 @@ input {
   } 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 428px) {
   .hero-section {
     /* padding: 112px 0; */
     max-width: 768px;
@@ -312,11 +310,10 @@ input {
     }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 768px) {
     .hero-section {
         padding: 188px 0;
         max-width: 1440px;
-        margin-bottom: 120px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)), url(../images/hero/hero-bg_desk.jpg);
     }
@@ -387,6 +384,16 @@ input {
 
 /* BENEFITS */
 
+.benefits-section {
+    padding-top: 96px;
+} 
+
+@media only screen and (min-width: 1158px) {
+    .benefits-section {
+        padding-top: 120px;
+        padding-bottom: 0;
+    }
+}
 
 
 .benefits-list {
@@ -394,6 +401,7 @@ input {
     justify-content: center;
     flex-wrap: wrap;
     gap: 72px;
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -451,6 +459,7 @@ input {
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
+        margin-bottom: 8px;
 }
 
 @media only screen and (min-width:768px) {
@@ -501,7 +510,7 @@ gap: 24px;
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        margin-bottom: 72px;   
+        margin-bottom: 72px; 
         
 }
 
@@ -509,6 +518,12 @@ gap: 24px;
    .what-section {
     display: none;
   }
+}
+
+@media only screen and (min-width: 1158px) {
+    .what-section {
+        padding-top: 120px;
+    }
 }
 
 /* OUR TEEM */
@@ -720,6 +735,10 @@ column-gap: 24px;
 
 .cards-item {
 width: calc((100% - 48) / 30);
+}
+
+.item-title.card {
+    margin-bottom: 8px;
 }
 
 .cards-link {
