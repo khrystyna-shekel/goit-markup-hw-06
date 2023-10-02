@@ -753,7 +753,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 
 .footer-container {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
 }
@@ -768,6 +768,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 @media only screen and (min-width: 1158px) {
   .footer-container {
     padding: 0;
+    flex-wrap: nowrap;
   }
 }
 
@@ -784,7 +785,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 
 .footer-logo {
     margin-bottom: 16px;
-    display: inline-block;
+    display: block;
 }
 
 .footer-left-side {
@@ -905,13 +906,14 @@ fill: var(--light);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 16px;
 }
 
 @media only screen and (min-width: 768px) {
   .subscribe-box {
     gap: 24px;
+    flex-wrap: nowrap;
   }
 }
 
